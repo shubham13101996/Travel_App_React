@@ -41,6 +41,7 @@
     transform: skewY(3deg) translateY(-30px);
   }
 
-
-  
+  .scroll-hidden::-webkit-scrollbar {
+    display: none !important;
+  }
 }

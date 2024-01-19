@@ -1,6 +1,14 @@
 import React from "react";
-import { Explore, Footer, Hero, Memories, Navbar } from "./components";
-import { hero, memory, navlinks, placesAPI } from "./data/travelData";
+import {
+  Advertise,
+  Explore,
+  Footer,
+  Hero,
+  Memories,
+  Navbar,
+  Pricing,
+} from "./components";
+import { brands, hero, memory, navlinks, placesAPI, pricingapi } from "./data/travelData";
 
 const App = () => {
   return (
@@ -9,6 +17,8 @@ const App = () => {
       <Hero hero={hero} />
       <Memories memory={memory} />
       <Explore title="Explore The Beauty of World" placesAPI={placesAPI} />
+      <Advertise brands={brands} />
+      <Pricing pricingapi={pricingapi} />
       <Footer />
     </>
   );
