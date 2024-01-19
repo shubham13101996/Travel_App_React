@@ -1,6 +1,6 @@
 import React from "react";
-import { Footer, Hero, Navbar } from "./components";
-import { hero,navlinks } from "./data/travelData";
+import { Footer, Hero, Memories, Navbar } from "./components";
+import { hero,memory,navlinks } from "./data/travelData";
 
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
     <>
     <Navbar navlinks={navlinks}/>
     <Hero hero={hero}/>
+    <Memories memory={memory}/>
     <Footer/>
     </>
   )
