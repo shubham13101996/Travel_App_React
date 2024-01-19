@@ -68,16 +68,16 @@ export const memory = {
 };
 
 export const placesAPI = [
-  { placeImg: place1, location: "Lahore", distance: "3.0 hour dirve" },
-  { placeImg: place2, location: "Faisalabad", distance: "2.5 hour dirve" },
-  { placeImg: place3, location: "Multan", distance: "4.7 hour drive" },
-  { placeImg: place4, location: "Rawalpindi", distance: "4 hour drive" },
-  { placeImg: place5, location: "Islamabad", distance: "4.9 hour drive" },
-  { placeImg: place6, location: "Muree", distance: "4.5 hour drive" },
-  { placeImg: place7, location: "Nathia Gali", distance: "5.5 hour drive" },
-  { placeImg: place8, location: "Ayubia Gali", distance: "5.1 hour drive" },
-  { placeImg: place9, location: "Bhurban", distance: "5.1 hour drive" },
-  { placeImg: place10, location: "Gilgit", distance: "5.1 hour drive" },
+  { placeImg: place1, location: "Ladakh", distance: "3.0 hour dirve" },
+  { placeImg: place2, location: "Faridabad", distance: "2.5 hour dirve" },
+  { placeImg: place3, location: "Mumbai", distance: "4.7 hour drive" },
+  { placeImg: place4, location: "Rajasthan", distance: "4 hour drive" },
+  { placeImg: place5, location: "Chennai", distance: "4.9 hour drive" },
+  { placeImg: place6, location: "Meerut", distance: "4.5 hour drive" },
+  { placeImg: place7, location: "Champa Gali", distance: "5.5 hour drive" },
+  { placeImg: place8, location: "Ujjain", distance: "5.1 hour drive" },
+  { placeImg: place9, location: "Kerala", distance: "5.1 hour drive" },
+  { placeImg: place10, location: "Gujarat", distance: "5.1 hour drive" },
 ];
 
 export const pricingapi = {
