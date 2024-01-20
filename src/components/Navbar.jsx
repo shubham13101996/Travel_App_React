@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import menu from "../images/menu.svg";
@@ -6,12 +6,31 @@ import PopUpMenu from "./PopUpMenu";
 
 const Navbar = ({ navlinks }) => {
   const [popUpState, setPopUpState] = useState(false);
+  const [navState, setNavState] = useState(false);
+
+  const onNavScroll = () => {
+    if (window.scrollY > 180) {
+      setNavState(true);
+    } else {
+      setNavState(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", onNavScroll);
+
+    return ()=>{
+      window.removeEventListener("scroll",onNavScroll)
+    }
+  }, []);
+
+
   const onTriggerPopUp = () => {
     setPopUpState(!popUpState);
   };
   return (
     <>
-      <header className="flex items-center justify-center w-auto h-auto absolute top-8 left-0 right-0">
+      <header className={`nav-default ${navState && "nav-sticky"}`}>
         <nav className="flex items-center justify-between travel-container">
           <NavLink to={"/"} className="flex items-center">
             <img src={logo} alt="logo/img" className=" w-22 h-9 object-fill" />

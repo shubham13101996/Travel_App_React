@@ -5,7 +5,7 @@ const PriceCard = ({
 }) => {
   return (
     <>
-      <div className="p-5 rounded-lg bg-slate-50/5 ring-1 ring-slate-100 shadow-md shadow-slate-200">
+      <div className="p-5 rounded-lg bg-slate-50/5 ring-1 ring-slate-100 shadow-md shadow-slate-200 hover:scale-105 cursor-pointer transition-all duration-300">
         <div className=" flex items-center justify-between">
           <div className=" flex items-center gap-5">
             <div className="grid items-center ">
@@ -43,7 +43,8 @@ const PriceCard = ({
                 />
               </div>
               <div className="grid items-center">
-                <h1 className="font-normal text-lg text-gray-900 filter drop-shadow-lg lg:text-base">
+                <h1 className="font-normal text-lg text-gray-900 filter drop-shadow-lg lg:text-base hover:text-emerald-500
+                ">
                   {item.text}
                 </h1>
               </div>

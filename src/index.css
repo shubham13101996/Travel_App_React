@@ -11,6 +11,21 @@
     font-family: "Open Sans", sans-serif;
   }
 
+  body::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(66, 245, 141) rgb(66, 245, 141);
+  }
+  body::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-gradient-to-b from-slate-100 to-gray-100;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gradient-to-tr from-emerald-500 to-green-500;
+  }
+
   /* container */
   .travel-container {
     @apply w-[85vw] xl:w-[95vw] m-auto;
@@ -41,7 +56,16 @@
     transform: skewY(3deg) translateY(-30px);
   }
 
+  /* scroll-hidden  */
   .scroll-hidden::-webkit-scrollbar {
     display: none !important;
+  }
+
+
+  .nav-default {
+    @apply flex items-center justify-center fixed top-8 lg:top-5 left-0 right-0 transition-all duration-300;
+  }
+  .nav-sticky{
+    @apply bg-white/80 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 flex items-center h-[9vh] fixed top-0 left-0 right-0 opacity-100 z-[100] shadow-sm shadow-slate-100;
   }
 }

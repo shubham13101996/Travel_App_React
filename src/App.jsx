@@ -1,14 +1,25 @@
 import React from "react";
 import {
   Advertise,
+  Banner,
   Explore,
   Footer,
   Hero,
   Memories,
   Navbar,
+  Newsletter,
   Pricing,
 } from "./components";
-import { brands, hero, memory, navlinks, placesAPI, pricingapi } from "./data/travelData";
+import {
+  bannerAPI,
+  brands,
+  footerAPI,
+  hero,
+  memory,
+  navlinks,
+  placesAPI,
+  pricingapi,
+} from "./data/travelData";
 
 const App = () => {
   return (
@@ -19,7 +30,9 @@ const App = () => {
       <Explore title="Explore The Beauty of World" placesAPI={placesAPI} />
       <Advertise brands={brands} />
       <Pricing pricingapi={pricingapi} />
-      <Footer />
+      <Banner bannerAPI={bannerAPI} />
+      <Newsletter  />
+      <Footer footerAPI={footerAPI} />
     </>
   );
 };
